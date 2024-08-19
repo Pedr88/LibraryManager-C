@@ -21,7 +21,7 @@ Este é um sistema simples de gerenciamento de biblioteca escrito em C. O progra
     
 3.  Execute o programa:
     
-    `./biblioteca`
+    `./main.exe`
     
 4.  Utilize o menu para interagir com o sistema:
     
