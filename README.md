@@ -17,7 +17,7 @@ Este é um sistema simples de gerenciamento de biblioteca escrito em C. O progra
     
 2.  Compile o código:
     
-    `gcc biblioteca.c -o biblioteca`
+    `gcc -o main main.c`
     
 3.  Execute o programa:
     
