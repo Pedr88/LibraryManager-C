@@ -42,24 +42,42 @@ int main() {
 
       printf("Enter price: ");
       scanf(" %f", &lib[i].price);
+
       count++;
       i++;
+
       break;
     
     // Print book information
     case 2:
       printf("================================================\n");
       printf("you have entered the following information:");
+        
         for (i = 0; i < count; i++) {
-          printf("\n\nbook name = %s", lib[i].bookName);
-          printf("\t author name = %s", lib[i].author);
-          printf("\t  pages = %d", lib[i].pages);
-          printf("\t  price = %.2f\n", lib[i].price);
+          printf("\n\nbook name = %s      ", lib[i].bookName);
+          printf("author name = %s      ", lib[i].author);
+          printf("pages = %d      ", lib[i].pages);
+          printf("price = %.2f\n", lib[i].price);
         }
+
       break;
     
     // Take the author name as input
     case 3:
+      printf("================================================\n");
+      printf("Enter author name: ");
+      fgets(authorName, sizeof(authorName), stdin);
+      authorName[strcspn(authorName, "\n")] = 0;
+      
+      for (int i = 0; i < count; i++) {
+        if (strcmp(authorName, lib[i].author) == 0) {
+          printf("\nbook name = %s      ", lib[i].bookName);
+          printf("author name = %s      ", lib[i].author);
+          printf("pages = %d      ", lib[i].pages);
+          printf("price = %.2f\n", lib[i].price);
+        }
+        
+      }
       
       break;
     
