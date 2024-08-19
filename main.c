@@ -83,7 +83,9 @@ int main() {
     
     // Print number of book in library
     case 4:
-      
+      printf("================================================\n\n");
+      printf("Number of books in the library: %d\n", count);
+
       break;
     
     case 5:
