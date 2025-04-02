@@ -1,46 +1,45 @@
-# Simple Library Management System
+# 📚 Sistema de Gerenciamento de Biblioteca em C
 
-Este é um sistema simples de gerenciamento de biblioteca escrito em C. O programa permite adicionar informações sobre livros, exibir detalhes dos livros armazenados, listar livros de um autor específico e mostrar a contagem total de livros na biblioteca.
+Sistema simples para gerenciamento de biblioteca, permitindo adicionar, listar e buscar livros por autor.
 
-## Funcionalidades
+## 🚀 Como Usar
 
-1.  **Adicionar Informações de Livro**: Permite ao usuário adicionar o nome do livro, autor, número de páginas e preço.
-2.  **Exibir Informações de Livros**: Mostra todas as informações dos livros que foram adicionados.
-3.  **Listar Livros por Autor**: Exibe livros que foram escritos por um autor específico fornecido pelo usuário.
-4.  **Contagem de Livros**: Mostra o número total de livros armazenados na biblioteca.
+### Instalação
+```bash
+git clone https://github.com/Pedr88/LibraryManager-C
+cd LibraryManager-C
+```
 
-## Como Usar
+### Compilação e Execução
+```bash
+# Compilar o código
+gcc -o main main.c
 
-1.  Clone o repositório:
-    
-    `git clone https://github.com/Pedr88/LibraryManager-C`
-    
-2.  Compile o código:
-    
-    `gcc -o main main.c`
-    
-3.  Execute o programa:
-    
-    `./main.exe`
-    
-4.  Utilize o menu para interagir com o sistema:
-    
-    -   **1**: Adicionar informações de livro
-    -   **2**: Exibir informações de livros
-    -   **3**: Listar livros de um autor específico
-    -   **4**: Mostrar o número de livros na biblioteca
-    -   **5**: Sair do programa
+# Executar o programa
+./main.exe
+```
 
-## Estrutura do Código
+## ⚙️ Funcionalidades
+- `Adicionar Livro`  
+  Permite cadastrar um livro informando nome, autor, número de páginas e preço.
+- `Exibir Livros`  
+  Lista todos os livros cadastrados.
+- `Buscar por Autor`  
+  Exibe os livros escritos por um autor específico.
+- `Contar Livros`  
+  Mostra a quantidade total de livros na biblioteca.
 
--   **Estrutura `library`**: Define os atributos para um livro, incluindo nome, autor, número de páginas e preço.
--   **Função `main`**: Contém o loop principal e o menu que permite ao usuário selecionar a operação desejada.
+## 📖 Exemplo de Uso
 
-## Exemplo de Uso
+Ao iniciar o programa, um menu será exibido com as opções:
+```bash
+1. Adicionar Livro
+2. Exibir Livros
+3. Buscar por Autor
+4. Contar Livros
+5. Sair
+```
 
-Ao iniciar o programa, você verá um menu com as opções disponíveis. O programa irá pedir para inserir a opção desejada e, conforme a opção selecionada, solicitará as informações necessárias.
-
-## Notas
-
--   **Limitações**: O tamanho dos campos `bookName` e `author` está limitado a 20 caracteres. Para nomes maiores, você pode ajustar os tamanhos dos arrays.
--   **Validação**: O código atual não inclui validação extensiva de entrada. A validação pode ser adicionada para melhorar a robustez do programa.
+## 🛠 Estrutura do Código
+- **Estrutura `library`**: Define os atributos do livro (nome, autor, páginas, preço).
+- **Função `main`**: Contém o loop principal e as interações com o usuário.
