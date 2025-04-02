@@ -1,45 +1,45 @@
-# 📚 Sistema de Gerenciamento de Biblioteca em C
+# 📚 Library Management System in C
 
-Sistema simples para gerenciamento de biblioteca, permitindo adicionar, listar e buscar livros por autor.
+A simple system for library management, allowing you to add, list, and search for books by author.
 
-## 🚀 Como Usar
+## 🚀 How to Use
 
-### Instalação
+### Installation
 ```bash
 git clone https://github.com/Pedr88/LibraryManager-C
 cd LibraryManager-C
 ```
 
-### Compilação e Execução
+### Compilation and Execution
 ```bash
-# Compilar o código
+# Compile the code
 gcc -o main main.c
 
-# Executar o programa
+# Run the program
 ./main.exe
 ```
 
-## ⚙️ Funcionalidades
-- `Adicionar Livro`  
-  Permite cadastrar um livro informando nome, autor, número de páginas e preço.
-- `Exibir Livros`  
-  Lista todos os livros cadastrados.
-- `Buscar por Autor`  
-  Exibe os livros escritos por um autor específico.
-- `Contar Livros`  
-  Mostra a quantidade total de livros na biblioteca.
+## ⚙️ Features
+- `Add Book`  
+  Allows registering a book by providing its name, author, number of pages, and price.
+- `Display Books`  
+  Lists all registered books.
+- `Search by Author`  
+  Displays the books written by a specific author.
+- `Count Books`  
+  Shows the total number of books in the library.
 
-## 📖 Exemplo de Uso
+## 📖 Example of Use
 
-Ao iniciar o programa, um menu será exibido com as opções:
+When starting the program, a menu will be displayed with the options:
 ```bash
-1. Adicionar Livro
-2. Exibir Livros
-3. Buscar por Autor
-4. Contar Livros
-5. Sair
+1. Add Book
+2. Display Books
+3. Search by Author
+4. Count Books
+5. Exit
 ```
 
-## 🛠 Estrutura do Código
-- **Estrutura `library`**: Define os atributos do livro (nome, autor, páginas, preço).
-- **Função `main`**: Contém o loop principal e as interações com o usuário.
+## 🛠 Code Structure
+- **Structure `library`**: Defines the attributes of the book (name, author, pages, price).
+- **Function `main`**: Contains the main loop and user interactions.
